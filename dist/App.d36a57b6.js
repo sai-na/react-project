@@ -30783,19 +30783,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _jsxRuntime = require("react/jsx-runtime");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// const Pet = () => {
-//   return React.createElement("div", {}, [
-//     React.createElement("h1", {}, props.name),
-//     React.createElement("h3", {}, props.animal),
-//     React.createElement("h3", {}, props.breed),
-//   ]);
-// };
 const Pet = props => {
   return (
     /*#__PURE__*/
@@ -30819,10 +30808,10 @@ const Pet = props => {
 
 var _default = Pet;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"App.js":[function(require,module,exports) {
+},{"react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
-var _reactDom = _interopRequireDefault(require("react-dom"));
+var _reactDom = require("react-dom");
 
 var _Pet = _interopRequireDefault(require("./Pet"));
 
@@ -30863,23 +30852,11 @@ const App = () => {
       name: "Luna",
       animal: "Dog",
       breed: "havanese"
-    }),
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)(_Pet.default, {
-      name: "Pepper",
-      animal: "Bird",
-      breed: "Cockatiel"
-    }),
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)(_Pet.default, {
-      name: "Sudo",
-      animal: "Dog",
-      breed: "Wheaten Terrier"
     })]
   });
 };
 
-_reactDom.default.render(
+_reactDom.ReactDOM.render(
 /*#__PURE__*/
 (0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
 },{"react-dom":"../node_modules/react-dom/index.js","./Pet":"Pet.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -30910,7 +30887,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59608" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58215" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
