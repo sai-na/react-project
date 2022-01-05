@@ -30819,7 +30819,7 @@ var _jsxRuntime = require("react/jsx-runtime");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { render } from 'react-dom';
+// import { ReactDOM } from "react-dom";
 // const App = () => {
 //   return React.createElement("div", {}, [
 //     React.createElement("h1", { id: "my-brand" }, "Adopt Me!"),
@@ -30841,6 +30841,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   ]);
 // };
 const App = () => {
+  (0, _reactDom.render)(
   /*#__PURE__*/
   (0, _jsxRuntime.jsxs)("div", {
     children: [
@@ -30866,12 +30867,13 @@ const App = () => {
       animal: "Dog",
       breed: "Wheaten Terrier"
     })]
-  });
-};
+  }));
+}; // ReactDOM.render(<App />, document.getElementById("root"));
 
-_reactDom.ReactDOM.render(
+
+(0, _reactDom.render)(
 /*#__PURE__*/
-(0, _jsxRuntime.jsx)(App, {}), document.getElementById("root")); // render(<App />, document.getElementById("root"));
+(0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
 },{"react-dom":"../node_modules/react-dom/index.js","./Pet":"Pet.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
