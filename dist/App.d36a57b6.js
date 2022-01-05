@@ -214,7 +214,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
   return to;
 };
 },{}],"../node_modules/react/cjs/react.development.js":[function(require,module,exports) {
-/** @license React v17.0.1
+/** @license React v17.0.2
  * react.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -231,7 +231,7 @@ if ("development" !== "production") {
     var _assign = require('object-assign'); // TODO: this is special because it gets imported during build.
 
 
-    var ReactVersion = '17.0.1'; // ATTENTION
+    var ReactVersion = '17.0.2'; // ATTENTION
     // When adding new symbols to this file,
     // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
     // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
@@ -3507,7 +3507,7 @@ if ("development" === 'production') {
   module.exports = require('./cjs/scheduler-tracing.development.js');
 }
 },{"./cjs/scheduler-tracing.development.js":"../node_modules/scheduler/cjs/scheduler-tracing.development.js"}],"../node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports) {
-/** @license React v17.0.1
+/** @license React v17.0.2
  * react-dom.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -14907,7 +14907,7 @@ if ("development" !== "production") {
     } // TODO: this is special because it gets imported during build.
 
 
-    var ReactVersion = '17.0.1';
+    var ReactVersion = '17.0.2';
     var NoMode = 0;
     var StrictMode = 1; // TODO: Remove BlockingMode and ConcurrentMode by reading from the root
     // tag instead
@@ -29567,7 +29567,7 @@ if ("development" === 'production') {
   module.exports = require('./cjs/react-dom.development.js');
 }
 },{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../node_modules/react/cjs/react-jsx-runtime.development.js":[function(require,module,exports) {
-/** @license React v17.0.1
+/** @license React v17.0.2
  * react-jsx-runtime.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -30819,6 +30819,7 @@ var _jsxRuntime = require("react/jsx-runtime");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import { render } from 'react-dom';
 // const App = () => {
 //   return React.createElement("div", {}, [
 //     React.createElement("h1", { id: "my-brand" }, "Adopt Me!"),
@@ -30852,13 +30853,25 @@ const App = () => {
       name: "Luna",
       animal: "Dog",
       breed: "havanese"
+    }),
+    /*#__PURE__*/
+    (0, _jsxRuntime.jsx)(_Pet.default, {
+      name: "Pepper",
+      animal: "Bird",
+      breed: "Cockatiel"
+    }),
+    /*#__PURE__*/
+    (0, _jsxRuntime.jsx)(_Pet.default, {
+      name: "Sudo",
+      animal: "Dog",
+      breed: "Wheaten Terrier"
     })]
   });
 };
 
 _reactDom.ReactDOM.render(
 /*#__PURE__*/
-(0, _jsxRuntime.jsx)(App, {}), document.getElementById("root"));
+(0, _jsxRuntime.jsx)(App, {}), document.getElementById("root")); // render(<App />, document.getElementById("root"));
 },{"react-dom":"../node_modules/react-dom/index.js","./Pet":"Pet.js","react/jsx-runtime":"../node_modules/react/jsx-runtime.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -30887,7 +30900,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56124" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61830" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
