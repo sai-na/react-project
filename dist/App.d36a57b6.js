@@ -30841,33 +30841,34 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //   ]);
 // };
 const App = () => {
-  render(
-  /*#__PURE__*/
-  (0, _jsxRuntime.jsxs)("div", {
-    children: [
+  return (
     /*#__PURE__*/
-    (0, _jsxRuntime.jsx)("h1", {
-      children: "Adopt Me!"
-    }),
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)(_Pet.default, {
-      name: "Luna",
-      animal: "Dog",
-      breed: "havanese"
-    }),
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)(_Pet.default, {
-      name: "Pepper",
-      animal: "Bird",
-      breed: "Cockatiel"
-    }),
-    /*#__PURE__*/
-    (0, _jsxRuntime.jsx)(_Pet.default, {
-      name: "Sudo",
-      animal: "Dog",
-      breed: "Wheaten Terrier"
-    })]
-  }));
+    (0, _jsxRuntime.jsxs)("div", {
+      children: [
+      /*#__PURE__*/
+      (0, _jsxRuntime.jsx)("h1", {
+        children: "Adopt Me!"
+      }),
+      /*#__PURE__*/
+      (0, _jsxRuntime.jsx)(_Pet.default, {
+        name: "Luna",
+        animal: "Dog",
+        breed: "havanese"
+      }),
+      /*#__PURE__*/
+      (0, _jsxRuntime.jsx)(_Pet.default, {
+        name: "Pepper",
+        animal: "Bird",
+        breed: "Cockatiel"
+      }),
+      /*#__PURE__*/
+      (0, _jsxRuntime.jsx)(_Pet.default, {
+        name: "Sudo",
+        animal: "Dog",
+        breed: "Wheaten Terrier"
+      })]
+    })
+  );
 };
 
 _reactDom.ReactDOM.render(

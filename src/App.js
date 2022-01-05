@@ -26,7 +26,7 @@ import Pet from "./Pet";
 
 
 const App = () => {
-  render(
+  return (
     <div>
       <h1>Adopt Me!</h1>
       <Pet name="Luna" animal="Dog" breed="havanese" />
