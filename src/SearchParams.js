@@ -1,7 +1,6 @@
 // https://reactjs.org/docs/hooks-state.html
 import { useEffect, useState } from "react";
 import Pet from "./Pet";
-import useBreedList from "./useBreedList";
 
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 const SearchParams = () => {
@@ -9,7 +8,7 @@ const SearchParams = () => {
     const [animal, setAnimal] = useState("");
     const [breed, setBreed] = useState("");
     const [pets, setPets] = useState([]);
-    const [breeds] = useBreedList(animal);
+    const breeds = [];
 
     useEffect(() => {
         requestPets();
@@ -30,6 +29,7 @@ const SearchParams = () => {
     return (
 
         <div className="search-params">
+<<<<<<< HEAD
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
@@ -37,6 +37,9 @@ const SearchParams = () => {
                 }
                 }
             >
+=======
+            <form>
+>>>>>>> parent of a4093d4 (Custom Hooks)
                 <label htmlFor="location"> Location
                     <input id="location" onChange={(e) => setLocation(e.target.value)}
 
