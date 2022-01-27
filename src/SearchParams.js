@@ -30,6 +30,7 @@ const SearchParams = () => {
 
         <div className="search-params">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
@@ -37,6 +38,9 @@ const SearchParams = () => {
                 }
                 }
             >
+=======
+            <form>
+>>>>>>> parent of a4093d4 (Custom Hooks)
 =======
             <form>
 >>>>>>> parent of a4093d4 (Custom Hooks)
