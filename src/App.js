@@ -1,6 +1,7 @@
-// hooks-state
-import { render } from 'react-dom';
+
 import SearchParams from './SearchParams';
+import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
   )
 }
 
-// ReactDOM.render(<App />, document.getElementById("root"));
-
-render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>, document.getElementById("root"));
