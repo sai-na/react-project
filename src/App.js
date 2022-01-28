@@ -12,17 +12,14 @@ const App = () => {
       <h1>Adopt Me!</h1>
       <Router>
         <Switch>
-          <Route path="/details/:id">
+          <Route path="/detalis/:id">
             <Details />
           </Route>
-
           <Route path="/">
-
             <SearchParams />
           </Route>
         </Switch>
       </Router>
-
 
     </div >
   )
