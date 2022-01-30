@@ -2,10 +2,9 @@ import { Component } from "react";
 import { withRouter } from "react-router-dom";
 
 class Details extends Component {
-    constructor() {
-        super();
-        this.state = { loading: true };
-    }
+
+    state = { loading: true };
+
 
     async componentDidMount() {
         const res = await fetch(
@@ -25,7 +24,7 @@ class Details extends Component {
     }
     render() {
         if (this.state.loading) {
-            return <header><h2>Loading.....</h2></header>;
+            return <header><h2>loading.....</h2></header>
         }
         const { animal, breed, city, state, description, name } = this.state;
         console.log(this.state);
