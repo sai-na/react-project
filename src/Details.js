@@ -27,7 +27,7 @@ class Details extends Component {
             return <header><h2>loading.....</h2></header>
         }
         const { animal, breed, city, state, description, name } = this.state;
-        console.log(this.state);
+
         return (
             <div className="details">
                 <h1>{name}</h1>
