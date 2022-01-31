@@ -1,5 +1,6 @@
 import { Component } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
+
 import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 
@@ -29,7 +30,7 @@ class Details extends Component {
             return <header><h2>loading.....</h2></header>
         }
         const { animal, breed, city, state, description, name, images } = this.state;
-        // throw new Error("lol it broke");
+        // throw new Error("lol it broke")
         return (
             <div className="details">
                 <Carousel images={images} />
